@@ -14,7 +14,8 @@ class CocheController extends Controller
      */
     public function index()
     {
-        //
+        $coches = Coche::all();
+        return view('index') -> with('coches', $coches);
     }
 
     /**
