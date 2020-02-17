@@ -13,7 +13,7 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{!! url('/'); !!}">Cotxes</a>
+            <a class="navbar-brand" href="{!! url('/'); !!}">Inici</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,6 +21,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="{!! url('/cotxe'); !!}">Tots els cotxes<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{!! url('/cotxe/create'); !!}">Crear un cotxe<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

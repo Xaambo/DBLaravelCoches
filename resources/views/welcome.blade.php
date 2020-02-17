@@ -86,6 +86,7 @@
 
                 <div class="links">
                     <a href="/cotxe">Veure Cotxes</a>
+                    <a href="/cotxe/create">Crear Cotxe</a>
                 </div>
             </div>
         </div>

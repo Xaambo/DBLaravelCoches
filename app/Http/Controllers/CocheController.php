@@ -36,8 +36,12 @@ class CocheController extends Controller
      */
     public function store(Request $request)
     {
+        if (Coche::where('id', '=', $request->input('id'))->exists()) {
+            return view('errorIDexists');
+        }
+
         $id = Coche::create($request->all());
-        return view('');
+        return redirect('cotxe');
     }
 
     /**

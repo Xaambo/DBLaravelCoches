@@ -9,23 +9,22 @@
 @section('content')
 
 <form action="/cotxe" method="post">
-	@csrf
+    @csrf
   <div class="form-group">
-    <label for="webid">Cotxe Id</label>
-    <input type="text" class="form-control" id="id" name="id">
-    
+    <label for="cocheId">ID del cotxe</label>
+    <input type="text" class="form-control"  id="id" name="id">
   </div>
   <div class="form-group">
-    <label for="webUrl">Marca</label>
+    <label for="marca">Marca</label>
     <input type="text" class="form-control" id="make" name="make">
   </div>
  <div class="form-group">
-    <label for="webName">Model</label>
+    <label for="model">Model</label>
     <input type="text" class="form-control" id="model" name="model">
   </div>
   <div class="form-group">
-    <label for="webDescription">Produït al</label>
-    <input type="text" class="form-control" id="produced_on" name="produced_on">
+    <label for="produced_on">Produït al</label>
+    <input type="date" class="form-control" id="produced_on" name="produced_on">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
