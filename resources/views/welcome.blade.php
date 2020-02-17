@@ -85,11 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="/cotxe">Cotxes</a>
-                    <a href="/cotxe/1">Veure cotxe</a>
-                    <a href="https://laravel-news.com">Crear cotxe</a>
-                    <a href="https://laravel-news.com">Actualitzar cotxe</a>
-                    <a href="https://laravel-news.com">Eliminar cotxe</a>
+                    <a href="/cotxe">Veure Cotxes</a>
                 </div>
             </div>
         </div>

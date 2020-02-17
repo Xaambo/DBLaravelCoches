@@ -25,7 +25,7 @@ class CocheController extends Controller
      */
     public function create()
     {
-        //
+        return view('formCrearCotxe');
     }
 
     /**
@@ -36,7 +36,8 @@ class CocheController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $id = Coche::create($request->all());
+        return view('');
     }
 
     /**
@@ -59,7 +60,8 @@ class CocheController extends Controller
      */
     public function edit($id)
     {
-        //
+        $coche = Coche::find($id);
+        return view('formUpdateCotxe')->with('coche', $coche);
     }
 
     /**
@@ -71,7 +73,9 @@ class CocheController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $coche = Coche::find($id);
+        $coche->update($request->all());
+        return redirect('cotxe');
     }
 
     /**
@@ -82,6 +86,8 @@ class CocheController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $coche = Coche::find($id);
+        $coche->delete();
+        return redirect('cotxe');
     }
 }

@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/coche/{id}', 'CocheController@show');
-
 Route::resource('cotxe', 'CocheController');
